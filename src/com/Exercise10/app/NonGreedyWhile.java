@@ -60,7 +60,8 @@ public class NonGreedyWhile
 		{
 			System.out.println("Element not found at index");
 		}
-		while(!isFound)
+		//int=0;
+		while(!isFound) //while(!isFound==false && i<ELEMENTS_ARRAY))
 		{
 		
 		}
