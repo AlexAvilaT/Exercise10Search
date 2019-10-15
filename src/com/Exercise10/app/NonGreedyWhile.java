@@ -3,9 +3,8 @@ package com.Exercise10.app;
 import java.util.Random;
 import java.util.Scanner;
 
-public class SequencialSearchNonGreedy 
+public class NonGreedyWhile
 {
-
 	public static void main(String[] args) 
 	{
 		/*llenar un vector con elementos  del 0 al 100 y pedirle al usuario un numero e 
@@ -16,6 +15,7 @@ public class SequencialSearchNonGreedy
 	//variable declaration
 		int numberToFind=0;
 		int indexFound=-1;
+		boolean isFound=false;
 		
 		//ARRAY DECLARATION
 		int[]vector = new int[ELEMENTS_ARRAY];
@@ -34,6 +34,7 @@ public class SequencialSearchNonGreedy
 		
 		do
 		{
+			System.out.println(" ");
 			System.out.println("Input the value to find inside the Array:");
 			
 			numberToFind=input.nextInt();
@@ -43,7 +44,7 @@ public class SequencialSearchNonGreedy
 			}
 		}while(numberToFind<0); 
 	
-		for(int i=0;i<ELEMENTS_ARRAY;i++)
+			for(int i=0;i<ELEMENTS_ARRAY;i++)
 		{
 			if(numberToFind==vector[i]) 
 			{
@@ -59,8 +60,19 @@ public class SequencialSearchNonGreedy
 		{
 			System.out.println("Element not found at index");
 		}
+		while(!isFound)
+		{
+		
+		}
+		input.close();
+	
 	}
 }
 				
 
+
+
+
+
+	
 
